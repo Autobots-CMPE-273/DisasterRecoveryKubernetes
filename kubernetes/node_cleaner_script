@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+var1=$(kubectl get nodes | awk 'END{print NR}'); 
+
+echo $var1
+z=`expr $var1 - 1`
+
+while [[ "$z" -gt 2 ]] ; do
+     
+        kubectl get nodes | grep -i NotReady | head -n1 | awk '{print $1}' | xargs kubectl delete  node
+        echo "Delete Node $var"	
+        z=`expr $z - 1`
+
+done
+
+

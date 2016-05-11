@@ -1,0 +1,13 @@
+(dp0
+Vip-10-0-0-34.ec2.internal
+p1
+S'Processing...'
+p2
+sVip-10-0-0-60.ec2.internal
+p3
+VTrue
+p4
+sVcentos-minion
+p5
+VTrue
+s.

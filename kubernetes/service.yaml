@@ -1,0 +1,11 @@
+kind: "Service"
+id: "webserver-service"
+apiVersion: "extensions/v1beta1"
+port: 80
+publicIPs:
+  - "10.0.0.32"
+portalIP: "10.254.100.50"
+selector:
+  name: "webserver"
+labels:
+  name: "webserver"
